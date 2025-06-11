@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             quizStartSection.classList.add('hidden');
             fetchQuestions();
         } else {
-            alert('Silahkan masukkan nama anda!');
+            alert('Masukkan nama anda sebelum memulai kuis!');
         }
     });
 

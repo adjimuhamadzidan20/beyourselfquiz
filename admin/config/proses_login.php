@@ -2,6 +2,20 @@
 require 'connectdb.php';
 session_start();
 
+if (isset($_COOKIE['ID']) && isset($_COOKIE['KEY'])) {
+    $query = mysqli_query($connect, "SELECT username FROM admin WHERE id_admin = '$_COOKIE[ID]'");
+    $res = mysqli_fetch_assoc($query);
+
+    if ($_COOKIE['KEY'] === hash('sha256', $res['username'])) {
+        $_SESSION['login'] = true;
+    }
+}
+
+if (isset($_SESSION['login'])) {
+    header('Location: index.php');
+    exit;
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -19,16 +33,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['gender'] = $data['jenis_kelamin'];
             $_SESSION['email'] = $data['email'];
 
+            if ($_POST['remember']) {
+                setcookie('ID', $data['id_admin'], time() + 60, '/');
+                setcookie('KEY', hash('sha256', $data['username']), time() + 60, '/');
+            }
+
             header('Location: ../index.php');
             exit;
         }
+    } else {
+        $_SESSION['pesan'] = 'Username atau password salah!';
+        $_SESSION['status'] = 'danger';
+
+        header('Location: ../login.php');
+        exit;
     }
-
-    // else {
-    //     $_SESSION['pesan'] = 'Username atau password salah!';
-    //     $_SESSION['status'] = 'danger';
-
-    //     header('Location: ../../login_admin.php');
-    //     exit;
-    // }
 }

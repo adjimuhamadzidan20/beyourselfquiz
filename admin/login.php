@@ -56,6 +56,17 @@ if (isset($_SESSION['login'])) {
                                 <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; letter-spacing: 2px;">BeyourselfQuiz</h2>
                             </a>
                         </div>
+                        <?php
+                        if (isset($_SESSION['pesan']) && isset($_SESSION['status'])) :
+                        ?>
+                            <div class="alert alert-<?= $_SESSION['status']; ?> rounded-0" role="alert" id="notif">
+                                <?= $_SESSION['pesan']; ?>
+                            </div>
+                        <?php
+                            unset($_SESSION['status']);
+                            unset($_SESSION['pesan']);
+                        endif;
+                        ?>
                         <div class="login-form">
                             <form action="config/proses_login.php" method="post">
                                 <div class="form-group">
@@ -87,24 +98,19 @@ if (isset($_SESSION['login'])) {
     <script src="assets/vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="assets/vendor/bootstrap-4.1/bootstrap.min.js"></script>
     <!-- Vendor JS       -->
-    <script src="assets/vendor/slick/slick.min.js">
-    </script>
+    <script src="assets/vendor/slick/slick.min.js"></script>
     <script src="assets/vendor/wow/wow.min.js"></script>
     <script src="assets/vendor/animsition/animsition.min.js"></script>
-    <script src="assets/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-    </script>
+    <script src="assets/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <script src="assets/vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="assets/vendor/counter-up/jquery.counterup.min.js">
-    </script>
+    <script src="assets/vendor/counter-up/jquery.counterup.min.js"></script>
     <script src="assets/vendor/circle-progress/circle-progress.min.js"></script>
     <script src="assets/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
     <script src="assets/vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="assets/vendor/select2/select2.min.js">
-    </script>
+    <script src="assets/vendor/select2/select2.min.js"></script>
 
     <!-- Main JS-->
     <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
