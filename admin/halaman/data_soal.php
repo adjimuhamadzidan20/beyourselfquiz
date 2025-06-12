@@ -20,7 +20,7 @@ $jumlahData = mysqli_num_rows($hasil);
         <div class="card m-t-15">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <span class="d-none d-md-block">Tabel soal pertanyaan kuis</span>
-                <a href="index.php?hal=tambah_soal&section=tambah_soal" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Soal Baru</a>
+                <a href="index.php?hal=tambah_soal&section=tambah_soal" class="btn btn-info text-white"><i class="fas fa-plus"></i> Tambah Soal Baru</a>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -61,9 +61,9 @@ $jumlahData = mysqli_num_rows($hasil);
                                                         data-opsi4="<?= $data['opsi_4']; ?>"
                                                         data-jawaban="<?= $data['jawaban']; ?>"
                                                         data-admin="<?= $data['nama_admin']; ?>"
-                                                        class="btn btn-primary btn-sm" title="detail"><i class="fas fa-eye"></i></button>
-                                                    <a href="index.php?hal=edit_soal&id=<?= $data['id_soal']; ?>" class="btn btn-primary btn-sm" title="ubah"><i class="fas fa-edit"></i></a>
-                                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#hapusSoal" data-id="<?= $data['id_soal']; ?>" title="hapus"><i class="fas fa-trash"></i></button>
+                                                        class="btn btn-info text-white btn-sm" title="detail"><i class="fas fa-eye"></i></button>
+                                                    <a href="index.php?hal=edit_soal&id=<?= $data['id_soal']; ?>&section=edit_soal" class="btn btn-info text-white btn-sm" title="ubah"><i class="fas fa-edit"></i></a>
+                                                    <button type="button" class="btn btn-info text-white btn-sm" data-toggle="modal" data-target="#hapusSoal" data-id="<?= $data['id_soal']; ?>" title="hapus"><i class="fas fa-trash"></i></button>
                                                 </td>
                                             </tr>
                                         <?php
@@ -149,7 +149,7 @@ $jumlahData = mysqli_num_rows($hasil);
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Hapus</button>
+                    <button type="submit" class="btn btn-info text-white">Hapus</button>
                 </div>
             </form>
         </div>

@@ -82,7 +82,7 @@ if (isset($_SESSION['login'])) {
                                         <input type="checkbox" name="remember">Remember Me
                                     </label>
                                 </div>
-                                <button class="au-btn au-btn--block au-btn--blue m-b-20" type="submit">Masuk</button>
+                                <button class="btn btn-info w-100 mt-2 m-b-20" type="submit">Masuk</button>
                             </form>
                         </div>
                     </div>

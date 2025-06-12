@@ -47,6 +47,17 @@ if (!isset($_SESSION['login'])) {
     <link rel="stylesheet" href="https://cdn.datatables.net/2.3.2/css/dataTables.bootstrap5.css">
     <link rel="stylesheet" href="assets/toastr/toastr.min.css">
 
+    <style>
+        .page-item.active .page-link {
+            background-color: #17A2B8;
+            border-color: #17A2B8;
+        }
+
+        .page-link {
+            color: #17A2B8;
+        }
+    </style>
+
 </head>
 
 <body>

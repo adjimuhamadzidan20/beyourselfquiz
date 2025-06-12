@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 10 Jun 2025 pada 17.00
+-- Waktu pembuatan: 12 Jun 2025 pada 16.14
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.1.31
 
@@ -86,7 +86,15 @@ CREATE TABLE `skor` (
 INSERT INTO `skor` (`id_skor`, `nama_peserta`, `jumlah_skor`, `created_at`) VALUES
 (1, 'Beyourselfit', 2, '2025-06-09 14:15:34'),
 (2, 'Adji', 4, '2025-06-10 14:57:08'),
-(3, 'Adji Muhamad Zidan', 3, '2025-06-10 14:57:31');
+(3, 'Adji Muhamad Zidan', 3, '2025-06-10 14:57:31'),
+(4, 'Adji', 5, '2025-06-11 13:50:22'),
+(5, 'Beyourselfit', 5, '2025-06-11 14:10:31'),
+(6, 'Adji Muhamad Zidan', 1, '2025-06-11 14:11:13'),
+(7, 'Adji', 7, '2025-06-11 14:21:37'),
+(8, 'Adji', 7, '2025-06-11 14:22:11'),
+(9, 'Adji', 4, '2025-06-11 14:22:54'),
+(10, 'Beyourselfit', 2, '2025-06-11 14:29:18'),
+(11, 'Revolution', 7, '2025-06-12 12:21:39');
 
 -- --------------------------------------------------------
 
@@ -170,7 +178,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT untuk tabel `skor`
 --
 ALTER TABLE `skor`
-  MODIFY `id_skor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_skor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT untuk tabel `soal`

@@ -63,8 +63,8 @@ $hasil = mysqli_query($connect, $sql);
                                 </select>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <a href="index.php?hal=soal&section=soal" class="btn btn-primary">Kembali</a>
-                                <button type="submit" class="btn btn-primary">Tambah</button>
+                                <a href="index.php?hal=soal&section=soal" class="btn btn-info text-white">Kembali</a>
+                                <button type="submit" class="btn btn-info text-white">Tambah</button>
                             </div>
                         </form>
                     </div>

@@ -15,7 +15,7 @@
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="player-name" placeholder="Masukkan Nama Anda">
                             </div>
-                            <button id="start-quiz-btn" class="btn btn-primary">Kerjakan Kuis</button>
+                            <button id="start-quiz-btn" class="btn btn-info text-white">Kerjakan Kuis</button>
                         </div>
                     </div>
                     <div class="card-footer">
@@ -41,7 +41,7 @@
                             <button class="option-btn" data-option="D">Option D</button>
                         </div>
                         <div class="d-flex justify-content-end mt-4">
-                            <button id="next-btn" class="btn btn-primary hidden">Next Question</button>
+                            <button id="next-btn" class="btn btn-info text-white hidden">Next Question</button>
                         </div>
                     </div>
                     <div class="card-footer">
@@ -63,11 +63,11 @@
                         <p class="card-text">Hasil Poin Kuis:<br><span class="fw-bold" id="final-score"></span> | <span class="fw-bold" id="total-questions"></span>
                         </p>
                         <div class="d-flex flex-column justify-content-md-center flex-md-row mt-4">
-                            <button id="restart-quiz-btn" class="btn btn-primary w-100 mb-2 mb-md-0 me-md-2">Restart Quiz</button>
-                            <a href="index.php" class="btn btn-primary w-100">Kembali ke Beranda</a>
+                            <button id="restart-quiz-btn" class="btn btn-info text-white w-100 mb-2 mb-md-0 me-md-2">Restart Quiz</button>
+                            <a href="index.php" class="btn btn-info w-100 text-white">Kembali ke Beranda</a>
                         </div>
                     </div>
-                    <div class="card-footer text-body-secondary">
+                    <div class="card-footer">
                     </div>
                 </div>
             </div>

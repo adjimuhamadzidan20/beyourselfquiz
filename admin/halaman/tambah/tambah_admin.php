@@ -37,8 +37,8 @@
                                 <input type="text" id="email" placeholder="Masukkan Email" class="form-control" name="email" required>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <a href="index.php?hal=admin&section=admin" class="btn btn-primary">Kembali</a>
-                                <button type="submit" class="btn btn-primary">Tambah</button>
+                                <a href="index.php?hal=admin&section=admin" class="btn btn-info text-white">Kembali</a>
+                                <button type="submit" class="btn btn-info text-white">Tambah</button>
                             </div>
                         </form>
                     </div>

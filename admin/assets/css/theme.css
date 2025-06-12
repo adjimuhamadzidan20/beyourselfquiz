@@ -339,6 +339,7 @@ section {
 .login-wrap {
     max-width: 540px;
     padding-top: 8vh;
+    padding-bottom: 15vh;
     margin: 0 auto;
 }
 

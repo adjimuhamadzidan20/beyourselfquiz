@@ -5,5 +5,5 @@
     <div class="desc animate__animated animate__fadeInUp">
         <p>Mengerjakan soal kuis untuk melatih serta mengukur kemampuan atau pengetahuan anda..</p>
     </div>
-    <a href="index.php?hal=form_quiz" class="btn btn-primary mt-2 animate__animated animate__fadeIn">Mulai Kuis</a>
+    <a href="index.php?hal=form_quiz" class="btn btn-info text-white mt-2 animate__animated animate__fadeIn">Mulai Kuis</a>
 </div>

@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-info">
         <div class="container py-1">
-            <a class="navbar-brand" href="index.php" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; letter-spacing: 2px;">BeyourselfQuiz</a>
+            <a class="navbar-brand text-white" href="index.php" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; letter-spacing: 2px;">BeyourselfQuiz</a>
         </div>
     </nav>
 

@@ -70,8 +70,8 @@ $dataSoal = mysqli_fetch_assoc($hasilSoal);
                                 </select>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <a href="index.php?hal=soal" class="btn btn-primary">Kembali</a>
-                                <button type="submit" class="btn btn-primary">Ubah</button>
+                                <a href="index.php?hal=soal" class="btn btn-info text-white">Kembali</a>
+                                <button type="submit" class="btn btn-info text-white">Ubah</button>
                             </div>
                         </form>
                     </div>

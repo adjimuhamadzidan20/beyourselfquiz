@@ -27,7 +27,7 @@ $jumlahData = mysqli_num_rows($hasil);
                             if ($jumlahData > 0) {
                             ?>
                                 <div class="m-l-15 m-r-15 mb-3 mb-md-0">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hapusRiwayat"><i class="fas fa-trash"></i> Hapus Seluruh Riwayat</button>
+                                    <button type="button" class="btn btn-info text-white" data-toggle="modal" data-target="#hapusRiwayat"><i class="fas fa-trash"></i> Hapus Seluruh Riwayat</button>
                                 </div>
                                 <table class="table table-bordered" id="example">
                                     <thead>
@@ -51,7 +51,7 @@ $jumlahData = mysqli_num_rows($hasil);
                                                 <td class="text-center text-nowrap"><?= $data['jumlah_skor']; ?></td>
                                                 <td class="text-center text-nowrap"><?= $data['created_at']; ?></td>
                                                 <td class="text-center text-nowrap">
-                                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#hapusHasil" data-id="<?= $data['id_skor']; ?>" title="hapus"><i class="fas fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-info text-white btn-sm" data-toggle="modal" data-target="#hapusHasil" data-id="<?= $data['id_skor']; ?>" title="hapus"><i class="fas fa-trash"></i></button>
                                                 </td>
                                             </tr>
                                         <?php
@@ -93,7 +93,7 @@ $jumlahData = mysqli_num_rows($hasil);
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Hapus</button>
+                    <button type="submit" class="btn btn-info text-white">Hapus</button>
                 </div>
             </form>
         </div>
@@ -115,7 +115,7 @@ $jumlahData = mysqli_num_rows($hasil);
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                <a href="config/proses_hapus.php?proses=hapus_riwayat_skor" class="btn btn-primary">Hapus</a>
+                <a href="config/proses_hapus.php?proses=hapus_riwayat_skor" class="btn btn-info text-white">Hapus</a>
             </div>
         </div>
     </div>

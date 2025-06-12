@@ -26,8 +26,8 @@ $data = mysqli_fetch_assoc($hasil);
                                 <input type="text" id="kategori" class="form-control" name="kategori" value="<?= $data['kategori']; ?>" required>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <a href="index.php?hal=kategori&section=kategori" class="btn btn-primary">Kembali</a>
-                                <button type="submit" class="btn btn-primary">Ubah</button>
+                                <a href="index.php?hal=kategori&section=kategori" class="btn btn-info text-white">Kembali</a>
+                                <button type="submit" class="btn btn-info text-white">Ubah</button>
                             </div>
                         </form>
                     </div>

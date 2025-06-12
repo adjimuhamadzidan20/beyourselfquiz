@@ -17,7 +17,7 @@ $hasil = mysqli_query($connect, $sql);
         <div class="card m-t-15">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <span class="d-none d-md-block">Tabel data admin</span>
-                <a href="index.php?hal=tambah_admin&section=tambah_admin" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Admin Baru</a>
+                <a href="index.php?hal=tambah_admin&section=tambah_admin" class="btn btn-info text-white"><i class="fas fa-plus"></i> Tambah Admin Baru</a>
             </div>
             <div class="card-body">
                 <div class="row">
@@ -47,8 +47,8 @@ $hasil = mysqli_query($connect, $sql);
                                             <td class="text-nowrap"><?= $data['jenis_kelamin']; ?></td>
                                             <td class="text-nowrap"><?= $data['email']; ?></td>
                                             <td class="text-center" nowrap="nowrap">
-                                                <a href="index.php?hal=edit_admin&id=<?= $data['id_admin']; ?>" class="btn btn-primary btn-sm" title="ubah"><i class="fas fa-edit"></i></a>
-                                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#hapusAdmin" data-id="<?= $data['id_admin']; ?>" title="hapus"><i class="fas fa-trash"></i></button>
+                                                <a href="index.php?hal=edit_admin&id=<?= $data['id_admin']; ?>&section=edit_admin" class="btn btn-info text-white btn-sm" title="ubah"><i class="fas fa-edit"></i></a>
+                                                <button type="button" class="btn btn-info text-white btn-sm" data-toggle="modal" data-target="#hapusAdmin" data-id="<?= $data['id_admin']; ?>" title="hapus"><i class="fas fa-trash"></i></button>
                                             </td>
                                         </tr>
                                     <?php
@@ -81,7 +81,7 @@ $hasil = mysqli_query($connect, $sql);
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                    <button type="submit" class="btn btn-primary">Hapus</button>
+                    <button type="submit" class="btn btn-info text-white">Hapus</button>
                 </div>
             </form>
         </div>

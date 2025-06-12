@@ -47,8 +47,8 @@ $data = mysqli_fetch_assoc($hasil);
                                 <input type="text" id="email" class="form-control" name="email" value="<?= $data['email']; ?>" required>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <a href="index.php?hal=admin&section=admin" class="btn btn-primary">Kembali</a>
-                                <button type="submit" class="btn btn-primary">Ubah</button>
+                                <a href="index.php?hal=admin&section=admin" class="btn btn-info text-white">Kembali</a>
+                                <button type="submit" class="btn btn-info text-white">Ubah</button>
                             </div>
                         </form>
                     </div>
